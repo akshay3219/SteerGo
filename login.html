@@ -9,42 +9,43 @@
 
 
 <div class="container" style="text-align: center" >
+    <div class="col-sm-12 ">
     <div class="row">
         <div class="Absolute-Center is-Responsive">
             <div id="logo-container"></div>
-            <div class="col-sm-12 col-md-10 col-md-offset-1">
-
-                <p>please login into your account</p>
+                <img src="SteerGoPNG.png" alt="SteerGoPNG.png" style="height: 40px;width: 50px;"/>
+               <div class="form_box">
+                <p style="color: white">please login into your account</p>
 
 
                 <form ng-app="myApp" ng-controller="validateCtrl"
                       name="myForm" novalidate>
 
                     <p>
-                        <input type="email" name="email" ng-model="email" placeholder="Email" required>
-<span style="color:red" ng-show="myForm.email.$dirty &&
-myForm.email.$invalid">
-<span ng-show="myForm.email.$error.required">Email is
-required.</span>
-<span ng-show="myForm.email.$error.email">Invalid email
-address.</span>
-</span>
+                        <input type="email" name="email" ng-model="email" placeholder="Email" required autofocus>
+<!--<span style="color:red" ng-show="myForm.email.$dirty &&-->
+<!--myForm.email.$invalid">-->
+<!--<span ng-show="myForm.email.$error.required">Email is-->
+<!--required.</span>-->
+<!--<span ng-show="myForm.email.$error.email">Invalid email-->
+<!--address.</span>-->
+<!--</span>-->
                     </p>
 
 
                     <p>
                         <input type="password" name="password" ng-model="password" placeholder="Password" required>
-<span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
-<span ng-show="myForm.password.$error.required">Password is
-required.</span>
-</span>
+<!--<span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">-->
+<!--<span ng-show="myForm.password.$error.required">Password is-->
+<!--required.</span>-->
+<!--</span>-->
                     </p>
 
 
                     <p>
-                        <button class="but"
-                                ng-disabled="myForm.password.$dirty && myForm.password.$invalid ||
-myForm.email.$dirty && myForm.email.$invalid ">Login</button>
+                        <button class="but" >Login</button>
+                                <!--ng-disabled="myForm.password.$dirty && myForm.password.$invalid ||-->
+<!--myForm.email.$dirty && myForm.email.$invalid ">-->
                     </p>
                 </form>
                 <p><a href="#password" >Forgot Password?</a> </p>
