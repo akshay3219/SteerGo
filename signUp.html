@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/style1.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="Absolute-Center is-Responsive">
+            <div id="logo-container"></div>
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <p>  Create a Steer Go Account</p>
+
+
+                <form ng-app="myApp" ng-controller="validateCtrl"
+                      name="myForm" novalidate>
+
+                    <p>
+                        <input type="text" name="name" placeholder="Name" required>
+                    </p>
+
+                    <p>
+                        <input type="email" name="email" ng-model="email" placeholder="Email" required>
+<span style="color:red" ng-show="myForm.email.$dirty &&
+myForm.email.$invalid">
+<span ng-show="myForm.email.$error.required">Email is
+required.</span>
+<span ng-show="myForm.email.$error.email">Invalid email
+address.</span>
+</span>
+                    </p>
+
+                    <p>
+                        <input type="number" name="number" placeholder="Mobile" required>
+                    </p>
+
+
+                    <p>
+                        <input type="password" name="password" ng-model="password" placeholder="Password" required>
+<span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+<span ng-show="myForm.password.$error.required">Password is
+required.</span>
+</span>
+                    </p>
+
+                    <p>
+                        <input type="checkbox" name="checkbox" >Agree to the terms and policy
+                    </p>
+
+
+                    <p>
+                        <input type="submit" placeholder="Login" class="but"
+                               ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+myForm.email.$dirty && myForm.email.$invalid ||myForm.name.$dirty && myForm.number.$dirty">
+                    </p>
+                </form>
+
+                <p>Already have an account?</p>
+                <button class="but"><a href="login.html" class="but">Login</a> </button>
+
+                <p>2016 &copy; Steer Go.All Rights Reserved</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script src="bootstrap/js/angular.js"></script>
+<script src="bootstrap/js/formValidate.js"></script>
+</html>
+

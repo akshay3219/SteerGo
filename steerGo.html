@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>SteerGo - fullPage.js</title>
+    <meta name="author" content="Alvaro Trigo Lopez" />
+    <meta name="description" content="fullPage full-screen navigation and sections control menu." />
+    <meta name="keywords"  content="fullpage,jquery,demo,scrollbar,scroll,bar,fullscreen,navigation,control arrows, dots" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/jquery.fullPage.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet/style.css">
+
+
+</head>
+<body>
+
+
+
+<!--<div id="fullpage">-->
+<!--<div class="section" id="section1">-->
+<!--<div class="slide" id="slide1">-->
+
+<nav class="navbar navbar-default navbar-fixed-top id=navigation">
+    <div class="container ">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#" style="color: white"><strong>SteerGo</strong></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ><a href="#"><strong>HOME</strong></a></li>
+                <li><a href="#about"><strong>ABOUT US</strong></a></li>
+                <li><a href="#service"><strong>SERVICES</strong></a></li>
+                <li><a href="#feature"><strong>FEATURES</strong></a></li>
+                <li><a href="#contact"><strong>CONTACT US</strong></a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Action</a></li>-->
+                        <!--<li><a href="#">Another action</a></li>-->
+                        <!--<li><a href="#">Something else here</a></li>-->
+                        <!--<li role="separator" class="divider"></li>-->
+                        <!--<li class="dropdown-header">Nav header</li>-->
+                        <!--<li><a href="#">Services</a></li>-->
+                        <!--<li><a href="#">Features</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="../navbar/">Default</a></li>-->
+                <!--<li><a href="../navbar-static-top/">Static top</a></li>-->
+                <!--<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
+            <!--</ul>-->
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+
+
+<!--<nav class="navbar navbar-inverse id=navigation" >-->
+    <!--<div class="container-fluid " style=" background-color:midnightblue;text-decoration-color: white;">-->
+        <!--<div class="navbar-header" >-->
+            <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+
+            <!--<a class="navbar-brand" style="color: white" href="#">SteerGo</a>-->
+        <!--</div>-->
+        <!--<div class="collapse navbar-collapse" id="myNavbar">-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li ><a href="#">HOME</a></li>-->
+
+                <!--<li><a href="#about">ABOUT US</a></li>-->
+                <!--&lt;!&ndash;<li class="dropdown">&ndash;&gt;-->
+                <!--&lt;!&ndash;<a class="dropdown-toggle" data-toggle="dropdown" href="#service">SERVICES <span class="caret"></span></a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<ul class="dropdown-menu">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#">Page 1-1</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#">Page 1-2</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#">Page 1-3</a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+                <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                <!--<li><a href="#service">SERVICES</a></li>-->
+                <!--<li><a href="#feature">FEATURES</a></li>-->
+                <!--<li><a href="#">CONTACT US</a></li>-->
+            <!--</ul>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<!--<div class="intro">-->
+<div class="col-lg-12" style="margin: 0;padding:0">
+    <img src="bootstrap/img/banner-truck.jpg" alt="Norway" >
+    <div class="center"><h3 class="color"><strong>WE OFFER QUICK & POWERFULL SOLUTION FOR TRANSPORT</strong></h3><br>
+        <h4 style="font-size: 30px;color: white" ><strong>Any Time...Any Where... Quickest Delivery Guaranteed</strong> </h4><br>
+        <h4 style="font-size: 30px;color: white"><strong>Click below and join us to forget the tension of transport</strong></h4><br>
+
+        <button type="button" class="btn btn-primary" style="background-color: darkblue">ENQUIRY NOW</button>
+    </div>
+    <div class="topleft"><h3 class="color">SteerGo</h3></div>
+    <div class="topright"><h4 style="color: white">Call us Now  <strong>| +919658484950</strong></h4></div>
+</div>
+<!--<div class="slide" id="slide2">-->
+<!--<img src="bootstrap/img/slider1.jpg" alt="Norway" width="100%" height="662px">-->
+<!--<div class="center"><h3 class="color">Why wait for second option </h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--<h1>Enable Your Scroll Bar!</h1>-->
+<!--<p>The perfect combination!</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="section " id="section0">-->
+
+
+<div class="col-lg-12" style="min-height: 85vh;background-color: #bfd8d8">
+    <br>
+
+    <h2 class="text" id="about">ABOUT US</h2>
+
+    <hr class="style1">
+
+    <br>
+
+    <div class="col-lg-10 col-lg-offset-1">
+
+        <p style="color: black;font-size: 20px;text-align: left">In the transport industry in India, acquiring information about rates, credentials and performance from transporters has been slow, exhausting and random.
+            We at SteerGo introducing you with the new professional way of transport facility.
+            Here You have to give just the details of your way and we will provide you the best solution of transport.
+        </p>
+
+        <br>
+
+        <p style="color: black;font-size: 20px;text-align: left">
+            SteerGo is making transportation goods social,time-saving and convenient by providing numerous options to choose from.
+            The transporters are verified.So you can forget the worry about your transport.
+        </p>
+        <br/>
+        <p style="color: black;font-size: 20px;text-align: left">In the transport industry in India, acquiring information about rates, credentials and performance from transporters has been slow, exhausting and random.
+            We at SteerGo introducing you with the new professional way of transport facility.
+            Here You have to give just the details of your way and we will provide you the best solution of transport.
+        </p>
+
+        <br>
+
+        <p style="color: black;font-size: 20px;text-align: left">
+            SteerGo is making transportation goods social,time-saving and convenient by providing numerous options to choose from.
+            The transporters are verified.So you can forget the worry about your transport.
+        </p>
+
+        <p style="color: black;font-size: 20px;text-align: left">
+            SteerGo is making transportation goods social,time-saving and convenient by providing numerous options to choose from.
+            The transporters are verified.So you can forget the worry about your transport.
+        </p>
+    </div>
+
+
+</div>
+
+
+
+
+<!--</div>-->
+
+
+
+<!--<div class="section" id="section2">-->
+<!--<div class="intro">-->
+
+
+<!--<div class="col-lg-12" style="margin: 0;padding:21px;background-color: #e2d7bb">-->
+<!--<div class="heading" style="padding-top: 30px">-->
+<!--<h3 class="text" id="service">OUR SERVICES</h3>-->
+<!--<br>-->
+<!--<hr class="style1">-->
+<!--</div>-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+
+<!--<div class="col-lg-4 col-lg-offset-1 " style="border: solid;border-color: black;text-align:start;background-color:white ;border:1px solid ;">-->
+<!--<br>-->
+<!--<div class="col-lg-2 pull-left" style="height: 197px;">-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<span class="glyphicon glyphicon-education" ></span>-->
+<!--</div>-->
+<!--<br>-->
+<!--<h2 class="size1">Registration</h2>-->
+<!--<br>-->
+<!--<p>Register as Business @SteerGo.com and loginto your account.Here u have to fill the signup form. </p>-->
+<!--<br>-->
+<!--</div>-->
+
+<!--<div class="col-lg-4 col-lg-offset-0  " style="border: solid;border-color: black;text-align:start;background-color: white;border-width:1px;width:40% ;height:197px">-->
+<!--<br>-->
+<!--<div class="col-lg-2 pull-left" style="height: 197px;">-->
+<!--<br>-->
+<!--<br>-->
+<!--<br>-->
+<!--<span class="glyphicon glyphicon-education" ></span>-->
+<!--</div>-->
+<!--<br>-->
+<!--<h2 class="size1">Enquiry Details</h2>-->
+<!--<br>-->
+<!--<p>Post your enquiry by filling a simple form.Then transporters start binding on your enquiry.</p>-->
+<!--<br>-->
+<!--</div>-->
+<!--</div>-->
+
+<div class="col-lg-12 " style="margin: 0;padding:21px;background-color:#e2d7bb;min-height: 85vh">
+    <div class="heading" style="padding-top: 30px">
+        <h3 class="text" id="service">OUR SERVICES</h3>
+        <br>
+        <hr class="style1">
+    </div>
+    <br>
+    <br>
+
+    <div class="col-lg-12 " style="margin: 0;padding:21px;background-color: #e2d7bb;">
+        <div class="col-lg-4 col-lg-offset-1 parent" >
+            <br>
+            <div class="col-lg-2 pull-left" style="height: 170px;">
+                <br>
+                <br>
+                <br>
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <br>
+            <h2 class="size1">Registration</h2>
+            <br>
+            <p>Register as Business @SteerGo.com and loginto your account.Here u have to fill the signup form.</p>
+            <br>
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 parent " >
+            <br>
+            <div class="col-lg-2 pull-left" style="height: 170px;">
+                <br>
+                <br>
+                <br>
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <br>
+            <h2 class="size1">Enquiry Details </h2>
+            <br>
+            <p>Post your enquiry by filling a simple form.Then transporters start binding on your enquiry.</p>
+            <br>
+        </div>
+    </div>
+
+`
+    <div class="col-lg-12 " style="margin: 0;padding:21px;background-color: #e2d7bb;">
+
+        <div class="col-lg-4 col-lg-offset-1 parent " >
+            <br>
+            <div class="col-lg-2 pull-left " style="height: 170px;">
+                <br>
+                <br>
+                <br>
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <br>
+            <h2 class="size1">Best Offer </h2>
+            <br>
+            <p>You can choose from the available offers which are matching with your requirments.</p>
+            <br>
+        </div>
+
+
+        <div class="col-lg-4 col-lg-offset-2 parent  " >
+            <br>
+            <div class="col-lg-2 pull-left" style="height: 170px;">
+                <br>
+                <br>
+                <br>
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <br>
+            <h2 class="size1">Finalize Deal </h2>
+            <br>
+            <p>When your requirements of transport are fullfill by the transporter we will finalize the deal.</p>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!--</div>-->
+
+
+
+
+
+
+
+<!--<div class="section" id="section3">-->
+<!--<div class="intro">-->
+<div class="col-lg-12" style="margin: 0;padding:21px;background-color:#bfd8d8;min-height: 85vh">
+    <div class="heading" style="padding-top: 30px">
+        <h3 class="text" id="feature">SUPERB FEATURES</h3>
+        <br>
+        <hr class="style1">
+    </div>
+    <br>
+    <br>
+
+    <div class="col-lg-12" style="margin: 0;padding:21px;background-color:#bfd8d8;">
+        <div class="col-lg-4 col-lg-offset-1" style="text-align:end;">
+
+            <div class="col-lg-2 pull-right" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+
+
+            <h2 class="size1">One Stop Solutions</h2>
+            <br>
+            <p>SteerGo is one stop solutions provider for online truck booking.
+                One person to relay-on and one person to call for transport starting from Quotes to Delivery.</p>
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 " style="text-align:start;">
+            <div class="col-lg-2 pull-left" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+
+            <h2 class="size1">Many Quotations For a load </h2>
+            <br>
+            <p>SteerGo exposes its users to free market and ease online truck booking.
+                It reduces dependency on local transporters.</p>
+        </div>
+    </div>
+
+    <div class="col-lg-12" style="margin: 0;padding:21px;background-color:#bfd8d8;">
+
+        <div class="col-lg-4 col-lg-offset-1" style="text-align: right;">
+
+            <div class="col-lg-2 pull-right" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+
+            <h2 class="size1">Compare & Quote </h2>
+            <br>
+            <p>No more waiting for hours and days for your transport confirmation and pricing quotes.
+                Our pricing tools compare all quotes for you.</p>
+
+
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 " style="text-align: left;" >
+            <div class="col-lg-2 pull-left" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <h2 class="size1"> Safety and Risk Mitigation</h2>
+            <br>
+            <p>SteerGo takes utmost care in selection of its road transporter.
+                Load providers and load seekers can check and verify credentials.</p>
+
+
+        </div>
+    </div>
+    <div class="col-lg-12" style="margin: 0;padding:21px;background-color:#bfd8d8;">
+
+        <div class="col-lg-4 col-lg-offset-1" style="text-align: right;">
+            <div class="col-lg-2 pull-right" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+            <h2 class="size1">Booking Confirmation</h2>
+            <br>
+            <p>Upon finalization of Quotations load providers and truck suppliers receive e-mail with details of goods.</p>
+
+
+        </div>
+        <div class="col-lg-4 col-lg-offset-2 " style="text-align: left;">
+
+            <div class="col-lg-2 pull-left" style="height: 197px;">
+                <span class="glyphicon glyphicon-education" ></span>
+            </div>
+
+            <h2 class="size1">Pay Per Booking </h2>
+            <br>
+            <p>SteerGo charges a minimum commision on Pay Per Booking basis.</p>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--</div>-->
+<!--</div>-->
+
+
+<!--<div class="section" id="section4">-->
+
+<div class="col-lg-12" style="background-color:rgb(0,27,72);margin: 0;padding:0">
+    <div class="col-lg-3 col-lg-offset-1" style="color: white;text-align: left;" >
+        <br/>
+        <h4 class="size2" style="color: white;">CONTACT DETAIL</h4><br />
+        <p class="style3">
+            &#8711;Address:Pune<br /><br />
+            &#8711;Mobile :+919254202233<br /><br />
+            &#8711;Email  :SteerGo@123.com<br /><br />
+
+        </p>
+
+
+
+    </div>
+
+    <div class="col-lg-3 col-lg-offset-1" style="color: white;text-align: left;">
+        <br/>
+        <h4 class="size2" style="color: white;">USEFUL LINKS</h4><br>
+        <p class="style3" >Home<br/><br/>
+            Our Services<br/><br/>
+            Features<br/><br/>
+            Privacy policy<br/><br/>
+            Terms and use</p><br/><br/>
+    </div>
+
+    <div class="col-lg-3 " style="color: white;text-align: left;">
+        <br/>
+        <h4 class="size2" style="color: white">NEWS LETTER SIGNUP</h4><br>
+        <p class="style3">Takeover of a Private Company<br /><br />
+            Causes and methods of takeover of a Private Limited Company.</p><br/><br />
+
+    </div>
+
+    <hr style="background-color: #0e90d2;height: 1px;width: 80%">
+    <footer class="col-lg-3 col-lg-offset-1" style="background-color:#001b48;text-align: left;">
+        <p class="style3" > &copy; 2016 SteerGo All Rights Reserved
+        </p>
+        <br/>
+    </footer>
+</div>
+
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+</body>
+
+<!--[if IE]>
+<!--<script type="text/javascript">-->
+<!--var console = { log: function() {} };-->
+<!--//</script>-->
+<!--//<![endif]&ndash;&gt;-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="bootstrap/js/jquery.slimscroll.min.js"></script>
+
+<script type="text/javascript" src="bootstrap/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="bootstrap/js/examples.js"></script>
+<script type="text/javascript" src="bootstrap/js/effect.js" ></script>
+
+<!--<script type="text/javascript">-->
+<!--$(document).ready(function() {-->
+<!--$('#fullpage').fullpage({-->
+<!--anchors: ['firstPage', 'secondPage', '3rdPage'],-->
+<!--sectionsColor: ['white', '#bfd8d8', '#e2d7bb'],-->
+<!--scrollBar: true-->
+<!--});-->
+<!--});-->
+<!--//</script>-->
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enquiry Details</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/style1.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="Absolute-Center is-Responsive">
+            <div id="logo-container"></div>
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <p>Fill Details for Enquiry</p>
+
+
+                <form ng-app="myApp" ng-controller="validateCtrl"
+                      name="myForm" novalidate>
+
+                    <p>
+                        <input type="text" name="name" placeholder="Name" required>
+                    </p>
+
+
+                    <p>
+                        <input type="text" name="from" placeholder="From Location" required>
+                    </p>
+
+                    <p>
+                        <input type="text" name="to" placeholder="To Location" required>
+                    </p>
+
+                    <p>
+                        <input type="text" name="destination" placeholder="Destination address" required>
+                    </p>
+
+
+                    </p>
+
+                    <p>
+                        <input type="number" name="number" placeholder="Mobile" required>
+                    </p>
+
+                    <p>Payment Options</p>
+                    <input type="radio" name="payment" value="At pick up point" checked> At pick up point
+                    <input type="radio" name="payment" value="At drop point" > At drop point
+
+
+                    <p>
+                        <input type="submit" placeholder="Submit Query" class="but"
+                               ng-disabled="myForm.user.$dirty && myForm.user.$invalid ||
+myForm.email.$dirty && myForm.email.$invalid ||myForm.name.$dirty && myForm.number.$dirty">
+                    </p>
+                </form>
+
+
+
+                <p>2016 &copy; Steer Go.All Rights Reserved</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script src="bootstrap/js/angular.js"></script>
+<script src="bootstrap/js/formValidate.js"></script>
+</html>
+
