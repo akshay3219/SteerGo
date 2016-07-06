@@ -45,7 +45,7 @@ hr.style1 { background-color: darkblue; height: 1px; border: 0; width: 7% }
 }
 
 .size2{
-    font-size: 18px;
+    font-size: 14px;
 }
 /*For navigation menu*/
 
@@ -218,8 +218,40 @@ img {
 /*box*/
 .floating-box {
     display: inline-block;
-    width: 450px;
-    height: 140px;
+    min-width: 250px;
+    height: 180px;
     margin: 10px;
-    border: 3px solid #73AD21;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    box-shadow: 2px 2px 5px 5px grey;
+    -moz-box-shadow: 2px 2px 5px 5px grey;
+    border: solid 1px black;
+    background-color: white;
+    text-align: left;
+
 }
+
+
+/*.main{*/
+    /*width:65%;*/
+    /*height:125px;*/
+    /*margin-bottom:10px;*/
+    /*float:left;*/
+    /*display: inline-block;*/
+/*}*/
+/*.small{*/
+    /*width:35%;*/
+    /*height:25px;*/
+    /*!* float:left; *!*/
+    /*display:inline-block;*/
+    /*margin-bottom:5px;*/
+/*}*/
+
+/*@media screen and (max-width: 692px)   {*/
+    /*.main, .small{*/
+        /*width:100%;*/
+        /*float:none;*/
+    /*}*/
+
+/*}*/
