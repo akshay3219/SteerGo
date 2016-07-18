@@ -1,3 +1,8 @@
+
+
+
+
+
 #navigation{
     clear: both;
 }
@@ -37,6 +42,12 @@ hr.style1 { background-color: darkblue; height: 1px; border: 0; width: 7% }
     color:white;
 
 }
+
+
+
+
+
+
 
 
 .size1{
@@ -97,61 +108,59 @@ h1{
 }
 
 
-/*image*/
-.col-lg-12 {
-    position: relative;
-
-
-}
-
-.center {
-    position: absolute;
-    left: 0;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    text-decoration-color: white;
-}
-
-
-.center1 {
-    position: absolute;
-    left: 20px;
-    top: 40%;
-    width: 100%;
-    text-align: center;
-    font-size: 24px;
-    text-decoration-color: white;
-
-}
 
 
 
-.topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    font-size: 18px;
-}
+    /*image*/
+    .col-lg-12 {
+        position: relative;
 
+    }
 
-.topright {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    font-size: 18px;
-}
+    .center {
+        position: absolute;
+        left: 0;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        text-decoration-color: white;
+    }
 
-img {
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    background-position: center center;
-    background-size: cover ;
-    overflow: hidden;
+    .center1 {
+        position: absolute;
+        left: 20px;
+        top: 40%;
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        text-decoration-color: white;
 
-}
+    }
+
+    .topleft {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        font-size: 18px;
+    }
+
+    .topright {
+        position: absolute;
+        top: 8px;
+        right: 16px;
+        font-size: 18px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        background-position: center center;
+        background-size: cover;
+        overflow: hidden;
+
+    }
 
 /*image content*/
 .color{
@@ -194,31 +203,40 @@ img {
 
 
 
-.parent
-{
-    /*display: table;*/
-    /*height: 180px;*/
-    box-shadow:2px 2px 5px 5px grey;
-    -moz-box-shadow:2px 2px 5px 5px grey;
-    text-align:start;border: solid 1px;border-color: black;background-color: white;
-    width:450px;
-    max-width:450px;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+/*.parent*/
+/*{*/
+    /*!*display: table;*!*/
+    /*!*height: 180px;*!*/
+    /*box-shadow:2px 2px 5px 5px grey;*/
+    /*-moz-box-shadow:2px 2px 5px 5px grey;*/
+    /*text-align:start;border: solid 1px;border-color: black;background-color: white;*/
+    /*width:450px;*/
+    /*max-width:450px;*/
+    /*display: inline-block;*/
+    /*white-space: nowrap;*/
+    /*overflow: hidden;*/
+    /*text-overflow: ellipsis;*/
 
 
 
+
+/*}*/
+
+.parent{
+    display: table;
+    height: 660px;
+    border: 1px solid indianred;
 
 }
 
-
-
+.middle_container{
+    display: table-cell;
+    vertical-align: middle;
+}
 /*box*/
 .floating-box {
     display: inline-block;
-    min-width: 250px;
+    width: 450px;
     height: 180px;
     margin: 10px;
     white-space: nowrap;
@@ -255,3 +273,9 @@ img {
     /*}*/
 
 /*}*/
+
+
+
+/*SUPERB FEATURES*/
+
+
